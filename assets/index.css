@@ -12,6 +12,7 @@
     width: 30px;
     height: 30px;
     background-image: url('../images/birds.png');
+    transition: top 0.3s linear;
 }
 .start{
     position: absolute;
@@ -23,6 +24,9 @@
     text-align: center;
     line-height: 60px;
     font-weight: bolder;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    cursor: pointer;
 }
 .start.start-white{
     color: #fff;
@@ -40,6 +44,7 @@
     font-size: 24px;
     color: #fff;
     font-weight: bolder;
+    display: none;
 }
 .mask{
     position: absolute;
@@ -49,12 +54,14 @@
     bottom: 0;
     background-color: #000;
     opacity: 0.7;
+    display: none;
 }
 
 .end{
     position: absolute;
     top: 70px;
     left: 50%;
+    display: none;
     transform: translateX(-50%);
     text-align: center;
 }
@@ -111,6 +118,6 @@
 .end .restart{
     color: #09f;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: bolder;
     cursor: pointer;
 }
